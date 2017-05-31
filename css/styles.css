@@ -1,0 +1,114 @@
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+/*.columns {
+  min-height: 100px;
+}*/
+
+.nav {
+  width: 100%;
+  height:100px;
+}
+.wrapper {
+  background-color: purple;
+}
+
+.gall-1 {
+  width: 90%;
+  margin: 20px auto;
+  height: 300px;
+}
+
+.gall-2 {
+  width: 90%;
+  margin: 20px auto;
+  height: 300px;
+}
+
+.gall-3 {
+  width: 90%;
+  margin: 20px auto;
+  height: 300px;
+}
+
+.gall-4 {
+  width: 90%;
+  margin: 20px auto;
+  height: 300px;
+}
+
+.gall-5 {
+  width: 90%;
+  margin: 20px auto;
+  height: 300px;
+}
+
+.gall-6 {
+  width: 90%;
+  margin: 20px auto;
+  height: 300px;
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    background-color: red;
+  }
+  .gall-1 {
+    background-color: green;
+  }
+  .gall-2 {
+    background-color: blue;
+  }
+  .gall-3 {
+    background-color: yellow;
+  }
+  .gall-4 {
+    background-color: brown;
+  }
+  .gall-5 {
+    background-color: #000;
+  }
+  .gall-6 {
+    background-color: pink;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  .nav {
+    background-color: yellow;
+  }
+  .gall-1, .gall-2, .gall-3, .gall-4, .gall-5, .gall-6 {
+    float: left;
+    width: 40%;
+  }
+  .wrapper {
+    margin: 5% auto;
+    width: 90%;
+    position: relative;
+  }
+
+  .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  .gall-3.left, .gall-1.left, .gall-5.left {
+    background-color: black;
+    display: block;
+    margin-left: 8%;
+    margin-right: 2%;
+  }
+
+  .gall-2.right, .gall-4.right, .gall-6.right {
+    background-color: brown;
+    margin-left: 2%;
+  }
+
+  .gall-1, .gall-2, .gall-3, .gall-4, .gall-5, .gall-6 {
+
+  }
+}
